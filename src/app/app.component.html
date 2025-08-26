@@ -1,9 +1,5 @@
-<input 
-  type="file" 
-  accept="image/*" 
-  capture="environment" 
-  (change)="onFileSelected($event)" />
-  @if(previewUrl !=""){
-  <img  [src]="previewUrl" width="200" />
-  }
+<input type="file" accept="image/*" capture="environment" (change)="onFileSelected($event)" />
 
+@if(previewUrl !=""){
+<img [src]="previewUrl" width="200" />
+}
