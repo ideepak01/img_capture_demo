@@ -3,6 +3,7 @@
   accept="image/*" 
   capture="environment" 
   (change)="onFileSelected($event)" />
-
-  <img *ngIf="previewUrl" [src]="previewUrl" width="200" />
+  @if(previewUrl !=""){
+  <img  [src]="previewUrl" width="200" />
+  }
 
