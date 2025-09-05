@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npx http-server dist/img-capture-demo -p 8080 -a 0.0.0.0",
-    "build": "ng build",
+    "start": "npx http-server dist/img-capture-demo -p 8080 -a 0.0.0.0 --cors",
+    "build": "ng build --configuration=production",
+    "postinstall": "npm run build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
